@@ -11,7 +11,10 @@ def One_Hot_Encoding(X,cols):
     return X
 
 def featureScaling(X,a,b):
-    Normalized_X=np.zeros((X.shape[0],X.shape[1]));
+    Normalized_X=np.zeros((X.shape[0],X.shape[1]))
     for i in range(X.shape[1]):
-        Normalized_X[:,i]=((X[:,i]-min(X[:,i]))/(max(X[:,i])-min(X[:,i])))*(b-a)+a;
+        mx = max(X[:,i])
+        mn = min(X[:,i])
+        if mx != mn:
+            Normalized_X[:,i]=((X[:,i]-min(X[:,i]))/(mx-mn))*(b-a)+a
     return Normalized_X
