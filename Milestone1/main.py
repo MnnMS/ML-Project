@@ -1,41 +1,34 @@
 from pre_processing import *
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.model_selection import train_test_split
-from sklearn import linear_model
-from sklearn import metrics
+import multivariable_model
+import Normal_model
+import sklearn.metrics as sm
 
 data = pd.read_csv('AppleStore_training.csv')
 
-data.dropna(how='any',inplace=True)
-data.drop(columns=['currency', 'track_name'], inplace=True)
-# all_data = data.iloc[:,:]
-X=data.iloc[:,0:15]
+data.dropna(how='any', inplace=True)
 Y=data['user_rating']
 
-cols=['prime_genre','ver','cont_rating']
+# model 1 multivariable
+#X, cols = multivariable_model.pre_process(data)
+
+# model 2 Normal
+X, cols = Normal_model.pre_process(data)
+
 X = One_Hot_Encoding(X,cols)
 X = featureScaling(np.array(X),0,1)
 
-X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.30, shuffle=True)
+# model 1
+#prediction, y_test = multivariable_model.fit(X,Y)
+# model 2
+prediction = Normal_model.fit(X,Y)
 
-# corr = all_data.corr()
-# top_feature = corr.index[abs(corr['user_rating']>0.3)]
-# top_corr = all_data[top_feature].corr()
+# multi
+#test = y_test
+# normal
+test = Y
 
-cls = linear_model.LinearRegression()
-cls.fit(X_train,y_train)
-prediction= cls.predict(X_test)
-
-print('Mean Square Error', metrics.mean_squared_error(np.asarray(y_test), prediction))
-
-true_rate_value=np.asarray(y_test)[5]
-predicted_rate_value=prediction[5]
-
-print('True rate value s is : ' + str(true_rate_value))
-print('Predicted rate value  is : ' + str(predicted_rate_value))
-
-
-
+print('Mean Square Error', metrics.mean_squared_error(np.asarray(test), prediction))
+print("Mean squared error =", round(sm.mean_squared_error(np.asarray(test), prediction), 2))
+print("Median absolute error =", round(sm.median_absolute_error(np.asarray(test), prediction), 2))
+print("Explain variance score =", round(sm.explained_variance_score(np.asarray(test), prediction), 2))
+print("R2 score =", round(sm.r2_score(np.asarray(test), prediction), 2))
