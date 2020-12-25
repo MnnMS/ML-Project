@@ -1,36 +1,47 @@
 from pre_processing import *
-import pandas as pd
-import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn import metrics
-from sklearn import linear_model
-from sklearn import metrics
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import PolynomialFeatures
-#import poly_model as pm
+import multivariable_model
+import Normal_model
+import polynomial_model
+import sklearn.metrics as sm
 
 data = pd.read_csv('AppleStore_training.csv')
-data.dropna(how='any',inplace=True)
-X=data.iloc[:,[2,8]]
+
+data.dropna(how='any', inplace=True)
 Y=data['user_rating']
-# cols=['cont_rating']
-# X = One_Hot_Encoding(X,cols)
-X = featureScaling(np.array(X),0,1)
-X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.30,shuffle=False)
-poly_features = PolynomialFeatures(degree=3)
 
-# transforms the existing features to higher degree features.
-X_train_poly = poly_features.fit_transform(X_train)
+# model 1 multivariable
+#X, cols = multivariable_model.pre_process(data)
 
-# fit the transformed features to Linear Regression
-poly_model = linear_model.LinearRegression()
-poly_model.fit(X_train_poly, y_train)
+# model 2 Normal
+#X, cols = Normal_model.pre_process(data)
 
-# predicting on training data-set
-#y_train_predicted = poly_model.predict(X_train_poly)
+# model 3 Polynomial
+X,cols = polynomial_model.pre_process(data)
 
-# predicting on test data-set
-X_test_poly = poly_features.fit_transform(X_test)
-prediction = poly_model.predict(X_test_poly)
+X = One_Hot_Encoding(X, cols)
+X = featureScaling(np.array(X), 0, 1)
 
-print('Mean Square Error', metrics.mean_squared_error(y_test, prediction))
+
+# model 1
+#prediction, y_test = multivariable_model.fit(X,Y)
+
+# model 2
+#prediction = Normal_model.fit(X,Y)
+
+#model 3
+prediction,y_test = polynomial_model.train(X,Y)
+
+# multi
+#test = y_test
+
+# normal
+#test = Y
+
+#Polynomial
+test = y_test
+
+print('Mean Square Error', metrics.mean_squared_error(np.asarray(test), prediction))
+print("Mean squared error =", round(sm.mean_squared_error(np.asarray(test), prediction), 2))
+print("Median absolute error =", round(sm.median_absolute_error(np.asarray(test), prediction), 2))
+print("Explain variance score =", round(sm.explained_variance_score(np.asarray(test), prediction), 2))
+print("R2 score =", round(sm.r2_score(np.asarray(test), prediction), 2))
