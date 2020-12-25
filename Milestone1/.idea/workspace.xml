@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0846edd-b797-4822-ac3a-96390e04006e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bonus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Milestone1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Milestone1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polynomial_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/polynomial_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonus.py" beforeDir="false" afterPath="$PROJECT_DIR$/bonus.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +60,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Learning/Fourth Year/ML/Assignments/3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
@@ -226,6 +222,7 @@
       <workItem from="1608813931412" duration="3162000" />
       <workItem from="1608831292745" duration="4904000" />
       <workItem from="1608858353118" duration="1920000" />
+      <workItem from="1608906859113" duration="26000" />
     </task>
     <servers />
   </component>
