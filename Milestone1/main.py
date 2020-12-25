@@ -9,23 +9,24 @@ data.dropna(how='any', inplace=True)
 Y=data['user_rating']
 
 # model 1 multivariable
-#X, cols = multivariable_model.pre_process(data)
+X, cols = multivariable_model.pre_process(data)
 
 # model 2 Normal
-X, cols = Normal_model.pre_process(data)
+#X, cols = Normal_model.pre_process(data)
 
 X = One_Hot_Encoding(X,cols)
+#X.info()
 X = featureScaling(np.array(X),0,1)
 
 # model 1
-#prediction, y_test = multivariable_model.fit(X,Y)
+prediction, y_test = multivariable_model.fit(X,Y)
 # model 2
-prediction = Normal_model.fit(X,Y)
+#prediction = Normal_model.fit(X,Y)
 
 # multi
-#test = y_test
+test = y_test
 # normal
-test = Y
+#test = Y
 
 print('Mean Square Error', metrics.mean_squared_error(np.asarray(test), prediction))
 print("Mean squared error =", round(sm.mean_squared_error(np.asarray(test), prediction), 2))
