@@ -32,7 +32,7 @@ def pre_process(data):
     return X,cols
 
 def fit(X,Y):
-    X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.30, shuffle=True)
+    X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.30)
 
     # corr = all_data.corr()
     # top_feature = corr.index[abs(corr['user_rating']>0.3)]

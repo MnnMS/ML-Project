@@ -29,7 +29,7 @@ test = y_test
 #test = Y
 
 print('Mean Square Error', metrics.mean_squared_error(np.asarray(test), prediction))
-print("Mean squared error =", round(sm.mean_squared_error(np.asarray(test), prediction), 2))
+print("Mean Square Error (rounded) =", round(sm.mean_squared_error(np.asarray(test), prediction), 2))
 print("Median absolute error =", round(sm.median_absolute_error(np.asarray(test), prediction), 2))
 print("Explain variance score =", round(sm.explained_variance_score(np.asarray(test), prediction), 2))
 print("R2 score =", round(sm.r2_score(np.asarray(test), prediction), 2))
