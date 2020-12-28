@@ -1,6 +1,5 @@
 from pre_processing import *
 import multivariable_model
-import Normal_model
 import polynomial_model
 import sklearn.metrics as sm
 from bonus import semantic
@@ -10,17 +9,15 @@ data = pd.read_csv('AppleStore_training.csv')
 data.dropna(how='any', inplace=True)
 Y=data['user_rating']
 
+# remove/add comments to use specific model
 
 # model 1 multivariable
-#X, cols = multivariable_model.pre_process(data)
+X, cols = multivariable_model.pre_process(data)
 
 
-# model 2 Normal
-#X, cols = Normal_model.pre_process(data)
 
-
-# model 3 Polynomial
-X,cols = polynomial_model.pre_process(data)
+# model 2 Polynomial
+#X,cols = polynomial_model.pre_process(data)
 
 
 
@@ -37,22 +34,17 @@ X = featureScaling(np.array(X), 0, 1)
 
 
 # model 1
-#prediction, y_test = multivariable_model.fit(X,Y)
+prediction, y_test = multivariable_model.fit(X,Y)
 
-# model 2
-#prediction = Normal_model.fit(X,Y)
 
-#model 3
-prediction,y_test = polynomial_model.train(X,Y)
+#model 2
+#prediction,y_test = polynomial_model.train(X,Y)
 
 # multi
-#test = y_test
-
-# normal
-#test = Y
+test = y_test
 
 #Polynomial
-test = y_test
+#test = y_test
 
 print('Mean Square Error', metrics.mean_squared_error(np.asarray(test), prediction))
 print("Mean squared error =", round(sm.mean_squared_error(np.asarray(test), prediction), 2))
