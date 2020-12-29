@@ -63,7 +63,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.SVM_GK">
+  <component name="RunManager" selected="Python.Decision_tree">
     <configuration name="Assignment_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Milestone1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,12 +72,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\pc\anaconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="D:/Learning/Fourth Year/ML/Assignments/3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Learning/Fourth Year/ML/Assignments/3" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:/Learning/Fourth Year/ML/Assignments/3/Assignment_3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../Learning/Fourth Year/ML/Assignments/3/Assignment_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Decision_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Milestone1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\pc\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Decision_tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,39 +196,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="task3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Milestone1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\pc\anaconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="D:/Learning/Fourth Year/ML/Assignments/3" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:/Learning/Fourth Year/ML/Assignments/3/task3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Decision_tree" />
         <item itemvalue="Python.SVM_GK" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.Assignment_3" />
         <item itemvalue="Python.bonus" />
-        <item itemvalue="Python.task3" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -260,37 +260,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608904343481" />
-    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1609165583704">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1609282381075">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609282381075" />
     <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609165583704" />
-    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1609165583704">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1609282381075">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609282381075" />
     <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609165583704" />
-    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1609165583704">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1609282381075">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609282381075" />
     <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609165583704" />
-    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1609165583704">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1609282381075">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609282381075" />
     <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609165583704" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1608713386164">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1609282381075">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609282381075" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608713386164" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1608713386164">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1609282381075">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609282381075" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608713386164" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1608713386164">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1609282381075">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609282381075" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608713386164" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1608713386164">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1609282381075">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609282381075" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608713386164" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1608875573984">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -300,11 +308,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608902264896" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Milestone1$main.coverage" NAME="main Coverage Results" MODIFIED="1608931254321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Milestone1$SVM_GK.coverage" NAME="SVM_GK Coverage Results" MODIFIED="1609165583695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Milestone1$bonus.coverage" NAME="bonus Coverage Results" MODIFIED="1608902140849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Milestone1$polynomial_model.coverage" NAME="polynomial_model Coverage Results" MODIFIED="1608896423789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
