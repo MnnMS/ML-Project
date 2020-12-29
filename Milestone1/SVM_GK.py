@@ -1,5 +1,6 @@
 from pre_processing import *
 from sklearn import svm
+from sklearn.multiclass import OneVsRestClassifier
 
 def pre_process(data):
     # Cleaning content rating
@@ -38,13 +39,16 @@ def pre_process(data):
     return X,Y,cols
 
 def fit(X,Y):
-    X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.20)
+    X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.30, random_state=0,shuffle=True)
 
-    C = 0.1
-    svc = svm.SVC(kernel='rbf', C=C).fit(X_train, y_train)
+    C = 1
+    #svc = svm.SVC(kernel='rbf', C=C).fit(X_train, y_train)
+    #svc_ovr = OneVsRestClassifier(svm.SVC(kernel='rbf', C=C)).fit(X_train, y_train)
     #svc = svm.SVC(kernel='linear', C=C).fit(X_train, y_train)
     #svc = svm.LinearSVC(C=C).fit(X_train, y_train)
     #svc = svm.SVC(kernel='poly', degree=5, C=C).fit(X_train, y_train)
+    # accuracy = svc_ovr.score(X_test, y_test)
+    # print('One VS Rest SVM accuracy: ' + str(accuracy))
     prediction= svc.predict(X_test)
 
     return prediction, y_test
