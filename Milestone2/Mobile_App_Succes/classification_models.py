@@ -1,6 +1,7 @@
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import AdaBoostClassifier
 from sklearn import svm
 import time
 
@@ -8,6 +9,16 @@ def decision_tree(x, y, depth=3):
     model = DecisionTreeClassifier(max_depth=depth)
     start = time.time()
     model.fit(x,y)
+    end = time.time()
+    trainingTime = end - start
+    return model, trainingTime
+
+def adaboost(x,y,depth=3):
+    model = AdaBoostClassifier(DecisionTreeClassifier(max_depth=depth),
+                       algorithm="SAMME",
+                       n_estimators=100)
+    start = time.time()
+    model.fit(x, y)
     end = time.time()
     trainingTime = end - start
     return model, trainingTime

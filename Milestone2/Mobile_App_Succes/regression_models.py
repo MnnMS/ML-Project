@@ -19,7 +19,7 @@ def polynomial_reg(x, y, deg=3, Reg=True):
     if not Reg:
         model = linear_model.LinearRegression()
     else:
-        model = linear_model.Ridge(alpha=1e-5)
+        model = linear_model.Ridge()
     start = time.time()
     model.fit(X_train_poly, y)
     end = time.time()

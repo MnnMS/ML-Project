@@ -96,14 +96,18 @@ def pre_process(data, reg, test):
     if test:
         X.drop(columns=['missing_value'], inplace=True)
     X = featureScaling(np.array(X), 0, 1)
-    x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.30) # try random_state=0,shuffle=True
+    if not test:
+        x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.20)
+        return x_train, x_test, y_train, y_test   # try random_state=0,shuffle=True
+    else:
+        return [],X,[],Y
 
     #feature scaling
     # scaler = StandardScaler()
     # x_train = scaler.fit_transform(x_train)
     # x_test = scaler.fit_transform(x_test)
 
-    return x_train, x_test, y_train, y_test
+
 
 
 # data.info() // data types

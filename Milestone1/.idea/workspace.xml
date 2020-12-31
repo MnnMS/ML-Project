@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0846edd-b797-4822-ac3a-96390e04006e" name="Default Changelist" comment="done">
-      <change afterPath="$PROJECT_DIR$/SVM_GK.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Milestone2/.idea/Milestone2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Milestone2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Milestone2/Mobile_App_Succes/classification_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Milestone2/Mobile_App_Succes/classification_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Milestone2/Mobile_App_Succes/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Milestone2/Mobile_App_Succes/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Milestone2/Mobile_App_Succes/pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Milestone2/Mobile_App_Succes/pre_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Milestone2/Mobile_App_Succes/regression_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Milestone2/Mobile_App_Succes/regression_models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,9 @@
   </component>
   <component name="JupyterTrust" id="68a1c1b7-f7a0-4ac8-a40e-e5357b5454e8" />
   <component name="ProjectId" id="1m291FIFnssfQTP785P7O1asvPq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,6 +66,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -206,7 +214,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -302,9 +310,10 @@
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608902264896" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Milestone1$main.coverage" NAME="main Coverage Results" MODIFIED="1608931254321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Milestone1$SVM_GK.coverage" NAME="SVM_GK Coverage Results" MODIFIED="1609165583695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Milestone1$bonus.coverage" NAME="bonus Coverage Results" MODIFIED="1608902140849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Milestone1$polynomial_model.coverage" NAME="polynomial_model Coverage Results" MODIFIED="1608896423789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Milestone1$main.coverage" NAME="main Coverage Results" MODIFIED="1608931254321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Milestone1$SVM_GK.coverage" NAME="SVM_GK Coverage Results" MODIFIED="1609165583695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Milestone1$KNN.coverage" NAME="KNN Coverage Results" MODIFIED="1609397599459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

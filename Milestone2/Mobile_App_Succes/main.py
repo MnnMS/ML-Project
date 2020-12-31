@@ -33,19 +33,24 @@ if type == '1':
         filename = 'multivariable_model.sav'
         pickle.dump(multi_model, open(filename, 'wb'))
 
-        # poly_model, poly_time = polynomial_reg(x_train, y_train)
-        # pred = poly_model.predict(x_test)
-        # MSE = round(sm.mean_squared_error(np.asarray(y_test), pred), 2)
-        # R2score = round(sm.r2_score(np.asarray(y_test), pred), 2)
-        # accuracy = [MSE, R2score]
-        # acc['polynomial'] = accuracy
-        # filename = 'polynomial_model.sav'
-        # pickle.dump(poly_model, open(filename, 'wb'))
+        poly_model, poly_time = polynomial_reg(x_train, y_train)
+        poly_features = PolynomialFeatures(degree=3)
+        X_test = poly_features.fit_transform(x_test)
+        pred = poly_model.predict(X_test)
+        MSE = round(sm.mean_squared_error(np.asarray(y_test), pred), 2)
+        R2score = round(sm.r2_score(np.asarray(y_test), pred), 2)
+        accuracy = [MSE, R2score]
+        acc['polynomial'] = accuracy
+        filename = 'polynomial_model.sav'
+        pickle.dump(poly_model, open(filename, 'wb'))
 
     else:
-        files = ['multivariable_model.sav']
+        files = ['multivariable_model.sav','polynomial_model.sav']
         for file in files:
             model = pickle.load(open(file, 'rb'))
+            if file == 'polynomial_model.sav':
+                poly_features = PolynomialFeatures(degree=3)
+                x_test = poly_features.fit_transform(x_test)
             pred = model.predict(x_test)
             MSE = round(sm.mean_squared_error(np.asarray(y_test), pred), 2)
             R2score = round(sm.r2_score(np.asarray(y_test), pred), 2)
@@ -80,6 +85,13 @@ elif type == '2':
         filename = 'decTree_model.sav'
         pickle.dump(decTree_model, open(filename, 'wb'))
 
+        adboost_model, adboost_time = adaboost(x_train, y_train)
+        pred = adboost_model.predict(x_test)
+        accuracy = np.mean(pred == y_test)
+        acc['Adaboost'] = round(accuracy * 100)
+        filename = 'adaboost_model.sav'
+        pickle.dump(adboost_model, open(filename, 'wb'))
+
         # logReg_model, logReg_time = logistic_reg(x_train, y_train)
         # pred = logReg_model.predict(x_test)
         # accuracy = np.mean(pred == y_test)
@@ -102,7 +114,7 @@ elif type == '2':
         pickle.dump(knn_model, open(filename, 'wb'))
 
     else:
-        files = ['decTree_model.sav', 'svm_linear_1v1_model.sav', 'knn_model.sav']
+        files = ['decTree_model.sav','adaboost_model.sav','svm_linear_1v1_model.sav', 'knn_model.sav']
         for file in files:
             model = pickle.load(open(file, 'rb'))
             pred = model.predict(x_test)
